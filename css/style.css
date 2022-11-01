@@ -8,16 +8,22 @@
 
 a {
     text-decoration: none;
-    color: gray;
-}
-
-a:hover {
-    color: rgba(0, 0, 0, 0.233);
 }
 
 .sidebar a:hover {
     color: rgb(93, 93, 255);
+}
 
+.nav_buttonbox > a {
+    color: gray;
+}
+
+.nav_buttonbox a:hover {
+    color: rgb(180, 180, 180);
+}
+
+tr {
+    vertical-align: middle;
 }
 
 body {
@@ -29,7 +35,10 @@ body {
 
 h2 {
     display: inline-block;
+}
 
+h4 {
+    margin: 0px;
 }
 
 /* HEADER */
@@ -124,8 +133,9 @@ nav {
     height: calc(100vh - 80px);
     float: right;
     background-color: rgb(230, 230, 230);
+    overflow-y: auto;
 }
-
+/* MAIN HEADER */
 .main_header {
     display: flex;
     justify-content: space-between;
@@ -156,9 +166,34 @@ nav {
     margin-right: 100px;
 }
 
+/* MAIN CONTENTS */
+.main_body {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 30px 10px;
+    gap: 20px;
+}
+
+/* bootstrap overwrite */
+.card {
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 10px;
+}
+/* bootstrap overwrite */
+
+#graph {
+    width: 100%;
+    height: auto;
+}
 
 /* MEDIA QUERY */
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1340px){
 
     .sidebar {
         width: 80px;
